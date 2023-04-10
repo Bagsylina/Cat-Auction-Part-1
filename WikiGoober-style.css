@@ -1,0 +1,12 @@
+.infocard{
+    height: fit-content;
+}
+
+@media screen and (max-width: 600pt) {
+    main{
+        grid-template-rows: 1fr 1fr;
+    }
+    .infocard{
+        height: fit-content;
+    }
+}

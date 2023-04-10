@@ -1,0 +1,189 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_title{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.product_title h2{
+    font-size: 40px;
+}
+.product_title img{
+    height: 390px;
+}
+
+.feature_title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    height: 100px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features article{
+    display: flex;
+    height: 400px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.features article:nth-of-type(even) {
+    background-color: white;
+    flex-direction: row;
+    color: black;
+}
+
+.features article:nth-of-type(odd) {
+    background-color: black;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+.features img {
+    min-height: 390px;
+    max-height: 390px;
+    max-width: 100%;
+}
+
+table {
+    border: none;
+    height: 250px;
+    width: 600px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table td, table th{
+    border-color: black;
+}
+
+.whiteTable td, .whiteTable th{
+    border-color: white;
+}
+
+table tr:first-child th{
+    border-top: none;
+}
+
+table tr th:first-child{
+    border-left: none;
+}
+
+table tr td:last-child, th:last-child{
+    border-right: none;
+}
+
+table tr:last-child th, 
+table tr:last-child td{
+    border-bottom: none;
+}
+
+.other_features h2{
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.other_features p{
+    height: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li{
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+ul li{
+    background-color: white;
+    color: black;
+}
+
+ul li:nth-of-type(2),
+ul li:nth-of-type(3):not(.last),
+ul li:nth-of-type(6) {
+    background-color: black;
+    color: white;
+}
+
+.buy {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.buy h4{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #a7a8a9;
+    color: #353637;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 60em) {
+    img{
+        display: none;
+    }
+    .features article{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        width: 100%;
+    }
+
+    ul li:nth-of-type(even) {
+        background-color: white;
+        color: black;
+    }
+    
+    ul li:nth-of-type(odd) {
+        background-color: black;
+        color: white;
+    }
+}
